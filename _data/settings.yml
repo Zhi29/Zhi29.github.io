@@ -1,7 +1,7 @@
 basic_settings:
-  site_title: Journal
-  site_tagline: A stunning personal blog Jekyll theme with an image-focused design.
-  favicon_image: /images/favicon.png
+  site_title: Zhi Li
+  site_tagline: This is my personal website. 
+  favicon_image: /images/Zhi1.jpeg
 
 header_settings:
   logo_image: 
@@ -10,13 +10,13 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Latest'
+    - title: 'Blogs'
       url: '/'
     - title: 'Projects'
       url: '/projects/'
-    - title: 'About'
+    - title: 'About Me'
       url: '/about'
-    - title: 'Contact'
+    - title: 'Contact Me'
       url: '/contact'
 
 grid_settings:
