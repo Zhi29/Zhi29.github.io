@@ -39,4 +39,4 @@ Journal is packed with powerful features to showcase your work:
 
 Journal is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $49.
 
-<a href="/CV for Li Zhi.pdf" class="button button--large">View my CV</a>
+<a src="/CV for Li Zhi.pdf" class="button button--large">View my CV</a>
