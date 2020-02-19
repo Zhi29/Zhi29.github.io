@@ -5,7 +5,14 @@ description: Hello, My name is Zhi Li, currently a student in University of Cali
 featured_image: /images/zhi_full.jpeg
 ---
 
-![](/images/home/Zhi1.jpeg)
+<div class="gallery" data-columns="3">
+	<img src="/images/demo/demo-portrait.jpg">
+	<img src="/images/home/Zhi1.jpeg">
+	<img src="/images/demo/demo-square.jpg">
+	<img src="/images/demo/demo-landscape-2.jpg">
+</div>
+
+<!![](/images/home/Zhi1.jpeg)>
 
 ## Education
 > ###### Bachelor of Engineering in Harbin Institute of Technology, Harbin China
