@@ -6,13 +6,13 @@ featured_image: /images/zhi_full.jpeg
 ---
 
 <div class="gallery" data-columns="3">
-	<img src="/images/demo/demo-portrait.jpg">
+	<img src="/images/About/Zhi3.jpeg">
 	<img src="/images/home/Zhi1.jpeg">
-	<img src="/images/demo/demo-square.jpg">
-	<img src="/images/demo/demo-landscape-2.jpg">
+	<img src="/images/About/Zhi2.jpeg">
+	<img src="/images/About/Zhi4.jpeg">
 </div>
 
-<!![](/images/home/Zhi1.jpeg)>
+<--!![](/images/home/Zhi1.jpeg)-->
 
 ## Education
 > ###### Bachelor of Engineering in Harbin Institute of Technology, Harbin China
