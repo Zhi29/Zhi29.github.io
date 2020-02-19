@@ -1,11 +1,18 @@
 ---
-title: About Journal
-subtitle: A stunning personal blog Jekyll theme with an image-focused design.
-description: A stunning personal blog Jekyll theme with an image-focused design.
-featured_image: /images/demo/demo-portrait.jpg
+title: About Me
+subtitle: Hello, My name is Zhi Li, currently a student in University of California, Los Angeles.
+description: Hello, My name is Zhi Li, currently a student in University of California, Los Angeles.
+featured_image: /images/zhi_full.jpeg
 ---
 
-![](/images/demo/demo-landscape.jpg)
+![](/images/home/Zhi1.jpeg)
+
+## Education
+> ### Bachelor of Engineering in Harbin Institute of Technology, Harbin China
+> Aerospace Engieering 
+
+> ### Master of Sciance in University of California, Los Angeles California
+> Mechanical Engineering, specific in Robotics
 
 ## Features
 
