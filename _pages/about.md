@@ -8,11 +8,11 @@ featured_image: /images/zhi_full.jpeg
 ![](/images/home/Zhi1.jpeg)
 
 ## Education
-> ### Bachelor of Engineering in Harbin Institute of Technology, Harbin China
-> Aerospace Engieering 
+> ###### Bachelor of Engineering in Harbin Institute of Technology, Harbin China
+> ###### Aerospace Engieering 
 
-> ### Master of Sciance in University of California, Los Angeles California
-> Mechanical Engineering, specific in Robotics
+> ###### Master of Science in University of California, Los Angeles California
+> ###### Mechanical Engineering, specific in Robotics
 
 ## Features
 
