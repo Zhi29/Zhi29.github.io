@@ -5,14 +5,7 @@ description: Hello, My name is Zhi Li, currently a student in University of Cali
 featured_image: /images/zhi_full.jpeg
 ---
 
-<div class="gallery" data-columns="3">
-	<img src="/images/About/Zhi3.jpeg">
-	<img src="/images/home/Zhi1.jpeg">
-	<img src="/images/About/Zhi2.jpeg">
-	<img src="/images/About/Zhi4.jpeg">
-</div>
-
-<--!![](/images/home/Zhi1.jpeg)-->
+![](/images/About/Zhi2.jpeg)
 
 ## Education
 > ###### Bachelor of Engineering in Harbin Institute of Technology, Harbin China
@@ -42,8 +35,8 @@ Journal is packed with powerful features to showcase your work:
 * Works with GitHub Pages
 * Updated and supported by the developers
 
-## Get Index
+## View My CV
 
 Journal is created and supported by [Jekyll Themes](https://jekyllthemes.io), and is available for $49.
 
-<a href="https://jekyllthemes.io/theme/journal-personal-jekyll-theme" class="button button--large">Get This Theme</a>
+<a ref="/CV for Li Zhi.pdf" class="button button--large">View my CV</a>
