@@ -2,7 +2,7 @@
 title: 'Aerial Manipulation'
 subtitle: 'This project aims to build an Aerial Manipulation system (a robotic arm under a drone).'
 date: 2018-06-30 00:00:00
-featured_image: '/images/projects/bk3.jpg'
+featured_image: '/images/projects/AM.jpg'
 ---
 
 ## Introduction 
