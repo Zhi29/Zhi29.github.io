@@ -27,7 +27,7 @@ My ultimate goal of this research is not just build the system and control it bu
 
 The following is a video of the Aerial Manipulation system test flying with the arm moving.
 
-<iframe src="https://www.youtube.com/watch?v=kvRFQ7bfAXk" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe href="https://www.youtube.com/watch?v=kvRFQ7bfAXk" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Simulation
 
