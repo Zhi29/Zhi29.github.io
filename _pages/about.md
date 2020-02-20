@@ -2,10 +2,10 @@
 title: About Me
 subtitle: Hello, My name is Zhi Li, currently a student in University of California, Los Angeles.
 description: Hello, My name is Zhi Li, currently a student in University of California, Los Angeles.
-featured_image: /images/home/Zhi1.jpeg
+featured_image: /images/zhi_full.jpeg
 ---
 
-![](/images/About/Zhi2.jpeg)
+![](/images/home/Zhi1.jpeg)
 
 ## Education
 > ###### Bachelor of Engineering in Harbin Institute of Technology, Harbin China
