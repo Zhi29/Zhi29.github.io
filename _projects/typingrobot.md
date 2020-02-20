@@ -2,7 +2,7 @@
 title: 'Typing Robot'
 subtitle: 'Can you build a typing robot start with just a piece of wood'
 date: 2018-06-30 00:00:00
-featured_image: '/images/projects/real.jpg'
+featured_image: '/images/projects/real.png'
 ---
 
 ## Overview
