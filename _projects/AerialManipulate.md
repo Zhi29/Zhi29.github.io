@@ -2,7 +2,7 @@
 title: 'Aerial Manipulation'
 subtitle: 'This project aims to build an Aerial Manipulation system (a robotic arm under a drone).'
 date: 2018-06-30 00:00:00
-featured_image: '/images/demo/demo-square.jpg'
+featured_image: '/images/projects/bk3.jpg'
 ---
 
 ## Introduction 
@@ -10,6 +10,8 @@ featured_image: '/images/demo/demo-square.jpg'
 What are the applications of drones nowadays? Aerial photography, package delivery and detection in unknown environment. How about manipulators? The most common application is assembly tasks in factory. We admit that drones and manipulators benefit a lot in our life, but they still have some weaknesses. For the drones, we do see one common weakness of payload capacity in drones, and drones with specific payload are only worked for just one specific task. This weakness greatly limits the application of drones. There is also weaknesses in manipulators. The base of each manipulator is fixed on the ground and this design greatly restricts the workspace of the end-effector and hence limits the applications of manipulators. 
 
 Therefore, what if we mount the manipulator on the drone to make the robotic arm move freely in the whole 3D space? Under this assumption, the mobility of the drone will greatly enlarge the effective workspace of the robotic arm, and a dexterous robotic arm with a moving base will have countless possible applications in the future as well, something that a drone or a fixed manipulator cannot do solely. And this is the motivation of my research to build a what we call aerial manipulation system and contribute to our life.
+
+![](/images/projects/AM.jpg)
 
 Imagine this — when you go to the supermarket, you could select your groceries through a tablet placed at the front gate and the aerial manipulators then would bring the groceries you need into your cart. Or after making an order with an iPad in a restaurant, your “aerial waiter” would serve your order, refill your drink and bring check to you when you finish. We do not even have to mention that aerial manipulator shall play an important role in many specific professional fields and replace humans for dangerous works. 
 
@@ -21,11 +23,11 @@ I am now trying to remodel the whole rigid body and analyze the dynamic properti
 
 My ultimate goal of this research is not just build the system and control it but to make the aerial manipulation system cooperate with human to do some daily tasks. Therefore, making the AM move as human desired is the unavoidable first step. I hope that this flying arm could benefit our life in the near future. Thank you.
 
-![](/images/demo/demo-landscape.jpg)
+## Video
 
 The following is a video of the Aerial Manipulation system test flying with the arm moving.
 
-<iframe src="https://player.vimeo.com/video/19536258?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/watch?v=kvRFQ7bfAXk" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Simulation
 
