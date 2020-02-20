@@ -2,7 +2,7 @@
 title: About Me
 subtitle: Hello, My name is Zhi Li, currently a student in University of California, Los Angeles.
 description: Hello, My name is Zhi Li, currently a student in University of California, Los Angeles.
-featured_image: /images/zhi_full.jpeg
+featured_image: /images/home/Zhi1.jpeg
 ---
 
 ![](/images/About/Zhi2.jpeg)
