@@ -2,7 +2,7 @@
 title: 'Grasping Detection'
 subtitle: 'Teach robot how to grasp an object'
 date: 2018-06-30 00:00:00
-featured_image: '/images/projects/refpaper.jpg'
+featured_image: '/images/projects/refpaper.png'
 ---
 
 ## Overview 
