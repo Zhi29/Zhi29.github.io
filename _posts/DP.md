@@ -1,8 +1,8 @@
 ---
 title: 'Dynamic Programming'
-subtitle: 'The Blog for Dynamic Programming'
 date: 2018-06-30 00:00:00
-featured_image: '/images/projects/AM.jpg'
+featured_image: '/images/demo/demo-square.jpg'
+excerpt: The Blog for Dynamic Programming
 ---
 
 ### 576 Out of Boundary Paths & Knight Probability in Chessboard
