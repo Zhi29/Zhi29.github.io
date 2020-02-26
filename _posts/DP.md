@@ -5,6 +5,36 @@ featured_image: '/images/demo/demo-square.jpg'
 excerpt: The Blog for Dynamic Programming
 ---
 
+### 300. Longest Increasing Subsequence
+
+#### dp 含义
+
+dp[i]表示在 i 位置时，最长的increasing Subsequence
+
+#### 递推关系
+
+比较输入数组的两个位置的值，如果nums[i] > nums[j] (i > j)， 则说明increasing subsequence 可以更长了，此时dp[i] = dp[j] + 1, 但同时还要跟本身dp[i]的值比较（因为不断循环i位置之前的所有子数组），如果本身就大，就不用再更新dp[j]+1了。
+
+```C++
+int lengthOfLIS(vector<int>& nums) {
+    if(nums.size() < 1) return 0;
+    vector<int> dp(nums.size(), 1);
+    for(int i = 1; i < nums.size(); i++){
+        for(int j = i-1; j >=0 ; j--){
+            if(nums[i] > nums[j]){
+                dp[i] = max(dp[i], dp[j]+1);
+            }
+        }
+    }
+    
+    int LIS = 0;
+    for(int i = 0; i < dp.size(); i++){
+        LIS = max(LIS, dp[i]);
+    }
+    return LIS;
+}
+```
+
 ### 516 Longest Palindromic Subsequence  & 相似题 647 Palindromic Substrings
 注意 subsequence 并不一定连续 而 substring 则是要连续
 
