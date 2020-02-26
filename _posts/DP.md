@@ -19,7 +19,7 @@ excerpt: The Blog for Dynamic Programming
 
 **Palindromic Substrings:** 与上一个类似，当我们不断增加我们看子字符串的长度 （从3开始直到整个字符串）如果我们每次比较所看长度的最边缘两个字符并且出最边缘两个字符外里面的是回文串，即（dp[i+1][j-1] == true）则 dp[i][j] = true. 我们用一个变量来记录回文串的数目。
 
-
+**Longest Palindromic Subsequence:**
 ```C++
 //516 Longest Palindromic Subsequence
 int longestPalindromeSubseq(string s){
@@ -52,6 +52,9 @@ int longestPalindromeSubseq(string s){
         return dp[0][n-1];
     }
 ```
+
+**Palindromic Substrings:**
+
 ```C++
 //647 Palindromic Substrings
 int countSubstrings(string s){
@@ -83,7 +86,7 @@ int countSubstrings(string s){
 }
 ```
 
-### 576 Out of Boundary Paths & Knight Probability in Chessboard
+### 576 Out of Boundary Paths & 688 Knight Probability in Chessboard
 
 #### dp 含义
 
@@ -147,5 +150,52 @@ double knightProbability(int N, int K, int r, int c) {//N为方格边长，K为�
         dp = temp;
     }
     return dp[r][c] / pow(8, K);
+}
+```
+
+### 673 Number of Longest Increasing Subsequence
+
+##### dp 含义
+
+本题使用的是一维dp数组，dp[i] 的含义为在这个位置前的数组有多少个最长increasing subsequence
+
+##### 递推关系
+
+本题的递推关系比较复杂，感觉不属于典型类型。需要维护两个数组，第一个叫length，用来记录到 i 位置时最长的increasing subsequence。 第二个数组叫做dp，用来记录到 i 位置时有多少个最长increasing subsequence。
+
+当我们比较给定输入数组中的两个位置的数时，如果nums[i] > nums[j] (i > j)
+
+我们比较length[i] 和 length[j]的大小，
+**当length[i] < length[j]** 
+也就是说如果 i 位置来看从0-i位置的子数组中最长increasing subsequence 比 在 j （i > j） 位置小。那么首先，我们更新这个i 位置的长度。然后dp[i] = dp[j] 本身i位置的increasing subseq 就小 所以 i 位置自然就应该把之前数目最多的延续下来，也就是 j。 
+**当length[i] >= length[j]时，并且 length[i] == length[j] + 1**
+如果两个位置从0-i位置的子数组中最长increasing subsequence长度一样，那么我们就在dp[i] 的基础上再加上 dp[j]
+
+```C++
+int findNumberOfLIS(vector<int>& nums) {
+    vector<int> length(nums.size(),0);
+    vector<int> dp(nums.size(), 1);
+
+    for(int i = 0 ; i < nums.size(); i++){
+        for(int j = 0; j <= i; j++){
+            if(nums[i] > nums[j]){
+                if(length[i] <= length[j]){
+                    length[i] = length[j] + 1;
+                    dp[i] = dp[j];
+                }
+                else if(length[j] + 1 == length[i])
+                    dp[i] += dp[j];
+            }
+            
+        }
+    }
+    
+    vector<int>::iterator longest = max_element(length.begin(), length.end());
+    int result = 0;
+    for(int i = 0; i < dp.size(); i++){
+        if(length[i] == *longest)
+            result += dp[i];
+    }
+    return result;
 }
 ```
