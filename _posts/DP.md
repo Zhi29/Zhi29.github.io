@@ -1,6 +1,6 @@
 ---
 title: 'Dynamic Programming'
-date: 2018-06-30 00:00:00
+date: 2020-02-25 00:00:00
 featured_image: '/images/demo/demo-square.jpg'
 excerpt: The Blog for Dynamic Programming
 ---
