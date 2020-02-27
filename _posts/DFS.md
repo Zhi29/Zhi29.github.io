@@ -137,3 +137,48 @@ int bottomUp(TreeNode* root){
     return depth;
 }
 ```
+
+## 一些典型的DFS问题
+
+### [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+
+#### 思路：建立两个bool矩阵分别记录可以进入pacific 和 atlantic的位置。然后从网格的四个边缘不断向里面进行DFS，用一个变量记录每个经过的格子的值来比较大小判断是否符合条件。
+
+```C++
+vector<vector<int>> pacificAtlantic(vector<vector<int>>& matrix) {
+    if(matrix.size()==0) return {};
+    int m = matrix.size(), n = matrix[0].size();
+    vector<vector<int>> output;
+    vector<vector<bool>> pacific(m,vector<bool>(n,false)), atlantic(m,vector<bool>(n,false));
+    for(int i = 0; i < m; i++){
+        dfs(matrix, matrix[i][0], i, 0, pacific);
+        dfs(matrix, matrix[i][n-1], i, n-1, atlantic);
+    }
+    for(int i = 0; i < n; i++){
+        dfs(matrix, matrix[0][i], 0, i, pacific);
+        dfs(matrix, matrix[m-1][i], m-1, i, atlantic);
+    }
+    for(int i = 0; i < m; i++){
+        for(int j = 0; j < n; j++){
+            if(pacific[i][j] && atlantic[i][j]){
+                output.push_back({i,j});
+            }
+                
+        }
+    }
+    return output;
+}
+
+void dfs(vector<vector<int>>& matrix, int prev, int row, int col, 
+            vector<vector<bool>>& visited){
+    int m = matrix.size(), n = matrix[0].size();
+    if(row < 0 || row >= m || col < 0 || col >= n || visited[row][col] || matrix[row][col] < prev)
+        return;
+    int curr = matrix[row][col];
+    visited[row][col] = true;
+    dfs(matrix, curr, row+1, col, visited);
+    dfs(matrix, curr, row-1, col, visited);
+    dfs(matrix, curr, row, col+1, visited);
+    dfs(matrix, curr, row, col-1, visited);
+}
+```
